@@ -1,0 +1,120 @@
+:root {
+  --default-bg-color: white;
+  --default-text-color: rgba(0,0,0,.88);
+  --default-border-color: #d9d9d9;
+  --primary-bg-color: #1677ff;
+  --primary-text-color: #ffffff;
+  --font-size-small: 12px;
+  --font-size-default: 14px;
+  --font-size-large: 16px;
+  --padding-small: 0 8px;
+  --padding-default: 4px 16px;
+  --padding-large: 8px 22px;
+  --height-small: 24px;
+  --height-default: 32px;
+  --height-large: 40px;
+
+}
+
+.btn {
+  cursor: pointer;
+  transition: 0.3s;
+  box-sizing: border-box;
+  border: none;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* type */
+.btn-default {
+  border: 1px solid var(--default-border-color);
+  color: var(--default-text-color);
+  background-color: var(--default-bg-color);
+}
+
+.btn-primary {
+  border: 1px solid var(--primary-bg-color);
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
+}
+
+.btn-ghost {
+  background-color: transparent;
+  
+}
+
+.btn-dashed {
+  border-style: dashed;
+  background-color: transparent;
+}
+
+.btn-link {
+  background-color: transparent;
+  border: none;
+}
+
+.btn-text {
+  background-color: transparent;
+  border: none;
+}
+
+.btn-text:hover {
+  background-color: #eeeeee;
+}
+
+
+/* size */
+.btn-size-default {
+  font-size: var(--font-size-default);
+  padding: var(--padding-default);
+  height:var(--height-default);
+}
+
+.btn-size-small {
+  font-size: var(--font-size-small);
+  padding: var(--padding-small);
+  height: var(--height-small);
+}
+
+.btn-size-large {
+  font-size: var(--font-size-large);
+  padding: var(--padding-large);
+  height: var(--height-large);
+}
+
+/* loading */
+.btn-loading {
+  opacity: 0.6;
+  margin-right: 2px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.btn-icon-spinner {
+  display: inline-block;
+  animation: rotate 1.5s linear infinite;
+}
+
+/* block */
+.btn-block {
+  width: 100%;
+}
+
+/* shape */
+.btn-circle {
+  border-radius: 50%;
+}
+
+.btn-round {
+  border-radius: 6px;
+}
